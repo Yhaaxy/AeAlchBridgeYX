@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { name = 'forge'; url = 'https://maven.minecraftforge.net' }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.0.0"
+group = "com.example.aebridge"
+archivesBaseName = "aebridge-1.12.2"
+
+sourceCompatibility = targetCompatibility = '1.8'
+
+minecraft {
+    version = "1.12.2-14.23.5.2860"
+    runDir = "run"
+    mappings = "stable_39"
+}
+
+repositories {
+    maven { url 'https://www.cursemaven.com' }
+}
+
+dependencies {
+    // Замените FILEID на реальные ID файлов с CurseForge
+    deobfCompile "curse.maven:applied-energistics-2-223794:FILEID"
+    runtime "curse.maven:alchemistry-FILEID_PROJECT:FILEID"
+}

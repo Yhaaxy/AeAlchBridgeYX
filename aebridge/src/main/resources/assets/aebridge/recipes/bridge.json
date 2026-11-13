@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "appliedenergistics2:interface" },
+    { "item": "minecraft:redstone" },
+    { "item": "minecraft:iron_ingot" }
+  ],
+  "result": { "item": "aebridge:bridge", "count": 1 }
+}
